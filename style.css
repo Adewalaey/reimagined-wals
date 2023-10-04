@@ -1,0 +1,119 @@
+body {
+    font-family: 'Montserrat', 'Fraunces';
+    padding: 5%;
+    background: hsl(30, 38%, 92%);
+}
+.wrapper {
+    margin: 5% 10%;
+    box-sizing: border-box;
+    width: 70%;
+    max-width: 1444px;
+    max-height: 900px;
+    margin: 0 auto;
+    display: flex;
+    background-color: none;
+    border: 1px thin hsl(212, 21%, 14%);
+    border-radius: 10px;
+}
+.row-1  {
+    background: url(images/image-product-desktop.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+div header,h1,p,.btn {
+    margin: 2%;
+}
+  .row-2 { 
+      background: #fff;
+      background-size: cover;
+      display: flex;
+      flex-wrap: wrap; 
+}
+header {
+    margin: 50px 75px 0 0;
+    color: hsl(228, 12%, 48%);
+}
+.btn {
+    font-size: 14px;
+    color: #fff;
+    background: hsl(158, 36%, 37%);
+    border: 5 solid #eee;
+    border-radius: 7px;
+    width: 92%;
+    height: 35px;
+}
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #ccaede;
+}
+.btn a::after {
+    color: fuchsia;
+}
+div h1 {
+    font-family: 'Montserrat', 'Fraunces', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+}
+p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    text-align: left;
+}
+.row-2 .lo {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: hsl(158, 36%, 37%);
+}
+.row-2 .lin {
+    font-size: .75em;
+    text-decoration: none;
+    text-decoration-line: line-through;
+    text-align: center;
+}
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+    .row {
+/*        flex: 0 0 25%;*/
+    }
+    .row-1 {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .row-2 {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+/*Mobile view*/
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .row {
+        flex: 0 0 25%;
+    }
+    .row-1 {
+        background: url(images/image-product-mobile.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .row-2 {
+        text-align: left;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        
+    }
+}
