@@ -1,0 +1,146 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: '';
+    margin: 20px 10px;
+    padding: 10px;
+    padding: 5%;
+    overflow: hidden;
+    display: flex;
+    height: 250vh;
+    align-items: center;
+    background: hsl(217, 54%, 11%);
+}
+.wrapper {
+    padding: 0 auto;
+    box-sizing: border-box;
+    max-width: 350px;
+    width: 90%;
+    height: 100%;
+    margin: 20px auto;
+    /* display: flex; */
+    flex-direction: column wrap;
+    background: hsl(216, 50%, 16%);
+    border: 1px thin hsl(212, 21%, 14%);
+    border-radius: 10px;
+}
+.img-div  {
+    position: relative;
+    background: url(image-equilibrium.jpg) no-repeat;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 10px;
+    margin: 15px;
+}
+.bloc-img {
+    /* display: block;
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+    height: 300px; */
+    border-radius: 10px;
+    position: relative;
+    height: 100%;
+}
+
+.under {
+    /* display: flex;
+    flex-direction: column; */
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+    overflow-wrap:break-word;
+}
+h2, .Jules {
+    color: hsl(0, 0%, 100%);
+} 
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p, footer {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 18px;
+    color: hsl(215, 32%, 50%);
+}
+p .first {
+    color: hsl(178, 100%, 50%);
+}
+
+/* Hover State */
+/* .img-div:hover {
+    display: flex;
+    flex-direction: column;
+} */
+
+.hov-img {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.376);
+}
+
+.img-div:hover .hov-img {
+    display: flex;
+    border-radius: 10px;
+}
+
+.hov-img img {
+    background-position: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}
+
+h2:hover,
+.Jules:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+/* end */
+
+.hr {
+    border-color: hsl(215, 32%, 27%);
+}
+.bit {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40%;
+    margin: auto;
+}
+.bit img {
+    background-position: left;
+    background-size: cover;
+    gap: 16px;
+}
+.footsy img {
+    width: 40px;
+    height: 40px;
+}
+@media screen and (max-width: 767px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }   
+    .content {
+        border-radius: 10px;
+    }
+    .p {
+        font-size: 18px;
+    }
+}
